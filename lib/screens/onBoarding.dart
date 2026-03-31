@@ -42,7 +42,7 @@ class _OnBoardingState extends State<OnBoarding> {
             Positioned(
                 bottom: 140.h,
                 left: 20.w,
-                right: 20.w,
+                right: 50.w,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -50,10 +50,10 @@ class _OnBoardingState extends State<OnBoarding> {
                       effect: ExpandingDotsEffect(
                           activeDotColor: AppColors.primary,
                           dotColor: Color(0xFFFF7686),
-                          dotHeight: 8,
-                          dotWidth: 8,
-                          expansionFactor: 4,
-                          spacing: 5
+                          dotHeight: 8.w,
+                          dotWidth: 8.w,
+                          expansionFactor: 2.w,
+                          spacing: 5.w
                       ),
                     ),
                     GestureDetector(
