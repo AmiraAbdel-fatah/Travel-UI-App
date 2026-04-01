@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.whiteColor,
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
@@ -30,12 +31,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 Image.asset(
                     "assets/login_logo.png", width: 320.w, height: 250.h),
                 SizedBox(height: 50.h),
-                CustomTextField(
+                const CustomTextField(
                   hintText: "Enter Your Email",
                   suffixIcon: Icons.email_outlined,
                 ),
                 SizedBox(height: 16.h),
-                CustomTextField(
+                const CustomTextField(
                   hintText: "Password",
                   suffixIcon: Icons.visibility_off_outlined,
                 ),
@@ -44,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     IconButton(
                       onPressed: () {
                         setState(() {
-                          isChecked != isChecked;
+                          isChecked = !isChecked;
                         });
                       },
                       icon: Icon(
@@ -55,12 +56,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     Text("Remember me", style: AppStyles.regular9Black),
-                    Spacer(),
+                    const Spacer(),
                     TextButton(
                       onPressed: () {
                         Navigator.pushReplacement(
                             context, MaterialPageRoute(builder: (context) =>
-                            RegisterScreen()));
+                            const RegisterScreen()));
                       },
                       child: Text(
                         "ForgetPassword?",
@@ -71,11 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ],
                 ),
-                Spacer(),
+                SizedBox(height: 120.h),
                 CustomElevatedButton(text: "Next", onPressed: () {
                   Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => WelcomeScreen())
+                      MaterialPageRoute(builder: (context) => const WelcomeScreen())
                   );
                 }),
                 Row(
@@ -87,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => RegisterScreen())
+                                builder: (context) => const RegisterScreen())
                         );
                       },
                       child: Text(
@@ -95,6 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ],
                 ),
+                SizedBox(height: 20.h),
               ],
             ),
           ),
