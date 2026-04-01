@@ -45,6 +45,11 @@ class AppStyles {
       fontWeight: FontWeight.w500,
       color: AppColors.blackColor
   );
+  static TextStyle mixed14Black = GoogleFonts.mulish(
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: AppColors.blackColor
+  );
   static TextStyle bold13Primary = GoogleFonts.mulish(
       fontSize: 13,
       fontWeight: FontWeight.bold,
