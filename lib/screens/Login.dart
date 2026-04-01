@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:travello_app/CustomWidgets/custom_elevated_button.dart';
 import 'package:travello_app/CustomWidgets/custom_text_field.dart';
 import 'package:travello_app/screens/Register.dart';
+import 'package:travello_app/screens/welcom_screen.dart';
 import 'package:travello_app/utils/AppColors.dart';
 import 'package:travello_app/utils/AppStyles.dart';
 
@@ -24,11 +25,11 @@ class _LoginScreenState extends State<LoginScreen> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Column(
             children: [
-              SizedBox(height: 70.h),
+              SizedBox(height: 50.h),
               Image.asset("assets/login_logo.png", width: 320.w, height: 250.h),
               SizedBox(height: 50.h),
               CustomTextField(
-                hintText: "Enter Your Password",
+                hintText: "Enter Your Email",
                 suffixIcon: Icons.email_outlined,
               ),
               SizedBox(height: 16.h),
@@ -64,20 +65,23 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
               ),
-              SizedBox(height: 190.h),
-              CustomElevatedButton(text: "Next", onPressed: () {}),
-              SizedBox(height: 8.h),
+              Spacer(),
+              CustomElevatedButton(text: "Next", onPressed: () {
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => WelcomeScreen())
+                );
+              }),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("New member ? ", style: AppStyles.mixed13Black),
+                  Text("New member ?", style: AppStyles.mixed13Black),
                   TextButton(
                     onPressed: () {
                       Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => RegisterScreen(),
-                        ),
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterScreen())
                       );
                     },
                     child: Text("Register now", style: AppStyles.bold13Primary),

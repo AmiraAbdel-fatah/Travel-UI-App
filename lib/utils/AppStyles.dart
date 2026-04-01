@@ -1,4 +1,5 @@
 import 'dart:ui';
+
 import 'package:flutter/src/painting/text_style.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travello_app/utils/AppColors.dart';
@@ -6,6 +7,11 @@ import 'package:travello_app/utils/AppColors.dart';
 class AppStyles {
   static TextStyle extraBold36Black = GoogleFonts.mulish(
     fontSize: 36,
+    fontWeight: FontWeight.w800,
+    color: AppColors.blackColor,
+  );
+  static TextStyle extraBold24Black = GoogleFonts.mulish(
+    fontSize: 24,
     fontWeight: FontWeight.w800,
     color: AppColors.blackColor,
   );
@@ -36,7 +42,7 @@ class AppStyles {
   );
   static TextStyle mixed13Black = GoogleFonts.mulish(
       fontSize: 13,
-      fontWeight: FontWeight.w300,
+      fontWeight: FontWeight.w500,
       color: AppColors.blackColor
   );
   static TextStyle bold13Primary = GoogleFonts.mulish(
