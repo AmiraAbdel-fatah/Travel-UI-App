@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:travello_app/screens/Login.dart';
 import 'package:travello_app/utils/AppColors.dart';
 import 'package:travello_app/utils/AppStyles.dart';
 
@@ -59,7 +60,8 @@ class _OnBoardingState extends State<OnBoarding> {
                     GestureDetector(
                       onTap: () {
                         if (isLastPage) {
-
+                          Navigator.pushReplacement(context, MaterialPageRoute(
+                              builder: (context) => LoginScreen()));
                         }
                         else {
                           _controller.nextPage(
