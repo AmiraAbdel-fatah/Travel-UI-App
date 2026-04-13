@@ -55,5 +55,45 @@ class AppStyles {
       fontWeight: FontWeight.bold,
       color: AppColors.primary
   );
+  static TextStyle bold24Black = GoogleFonts.mulish(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+  static TextStyle bold20Black = GoogleFonts.mulish(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+  static TextStyle bold18Black = GoogleFonts.mulish(
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+  static TextStyle bold16Accent = GoogleFonts.mulish(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.accent,
+  );
+  static TextStyle semiBold16Black = GoogleFonts.mulish(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: AppColors.blackColor,
+  );
+  static TextStyle semiBold14Grey = GoogleFonts.mulish(
+    fontSize: 14,
+    fontWeight: FontWeight.w600,
+    color: AppColors.grey,
+  );
+  static TextStyle medium14Grey = GoogleFonts.mulish(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.grey,
+  );
+  static TextStyle bold14Accent = GoogleFonts.mulish(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+    color: AppColors.accent,
+  );
 }
 

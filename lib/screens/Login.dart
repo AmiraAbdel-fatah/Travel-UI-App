@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:travello_app/CustomWidgets/custom_elevated_button.dart';
 import 'package:travello_app/CustomWidgets/custom_text_field.dart';
+import 'package:travello_app/screens/HomeProductsScreen.dart';
 import 'package:travello_app/screens/Register.dart';
-import 'package:travello_app/screens/welcom_screen.dart';
 import 'package:travello_app/utils/AppColors.dart';
 import 'package:travello_app/utils/AppStyles.dart';
 
@@ -76,7 +76,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 CustomElevatedButton(text: "Next", onPressed: () {
                   Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const WelcomeScreen())
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen())
                   );
                 }),
                 Row(
