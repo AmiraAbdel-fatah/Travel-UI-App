@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_verification_code/flutter_verification_code.dart';
 import 'package:travello_app/CustomWidgets/custom_elevated_button.dart';
+import 'package:travello_app/screens/HomeProductsScreen.dart';
 import 'package:travello_app/screens/Register.dart';
-import 'package:travello_app/screens/welcom_screen.dart';
 import 'package:travello_app/utils/AppColors.dart';
 import 'package:travello_app/utils/AppStyles.dart';
 
@@ -82,7 +82,7 @@ class _VerifyScreenState extends State<VerifyScreen> {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const WelcomeScreen(),
+                    builder: (context) => HomeScreen(),
                   ),
                 );
               },
